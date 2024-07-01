@@ -10,4 +10,4 @@ while (1):
 
 
 for d in digits[::-1]:
-    print(d,end=' ')
+    print(d,end='')
