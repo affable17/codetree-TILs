@@ -6,3 +6,5 @@ def rec_func(n):
     print(n, end =' ')
     rec_func(n-1)
     print(n, end =' ')
+
+rec_func(N)
