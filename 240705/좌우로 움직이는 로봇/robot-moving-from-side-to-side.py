@@ -34,9 +34,7 @@ if len(A)>len(B):
 else:
     longest = B
     shortest = A
-print(len(A), len(B))
-print(shortest)
-print(longest)
+
 
 
 cnt=0
@@ -55,6 +53,6 @@ for i in range(1, len(longest)):
         same = 1
     else:
         same=0
-    print(f"i={i}, same={same}, cnt={cnt}")
+#    print(f"i={i}, same={same}, cnt={cnt}")
 
 print(cnt)
