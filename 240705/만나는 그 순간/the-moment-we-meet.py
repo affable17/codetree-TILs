@@ -31,7 +31,9 @@ for _ in range(M):
             cur2-=1
             B.append(cur2)   
 
+ans=-1
 for i in range(1, len(A)):
     if A[i]==B[i]:
-        print(i)
+        ans=i
         break
+print(ans)
