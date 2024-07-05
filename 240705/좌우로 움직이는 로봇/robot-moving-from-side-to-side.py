@@ -48,11 +48,11 @@ for i in range(1, len(longest)):
         val1 = shortest[i]
     
     if val1==val2:
-        if same ==0:
+        if same == 0:
             cnt+=1
         same = 1
     else:
         same=0
-#    print(f"i={i}, same={same}, cnt={cnt}")
+    print(f"i={i}, same={same}, cnt={cnt}")
 
 print(cnt)
