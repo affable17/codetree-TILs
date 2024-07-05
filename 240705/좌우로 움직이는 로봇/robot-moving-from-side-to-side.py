@@ -27,14 +27,34 @@ for _ in range(m):
             cur2-=1
         B.append(cur2)
 
+#더 길이가 긴 수열 찾기 
+if len(A)>len(B):
+    longest = A
+    shortest = B
+else:
+    longest = B
+    shortest = A
+print(len(A), len(B))
+print(shortest)
+print(longest)
+
 
 cnt=0
-shortest = min(len(A), len(B))
 same = 0
-for i in range(1, shortest):
-    if same==0 and A[i]==B[i]:
-        cnt+=1
+for i in range(1, len(longest)):
+    val2 = longest[i]
+
+    if i>=(len(shortest)-1):
+        val1 = shortest[-1]
+    else:
+        val1 = shortest[i]
+    
+    if val1==val2:
+        if same ==0:
+            cnt+=1
         same = 1
     else:
-        same = 0
+        same=0
+    print(f"i={i}, same={same}, cnt={cnt}")
+
 print(cnt)
