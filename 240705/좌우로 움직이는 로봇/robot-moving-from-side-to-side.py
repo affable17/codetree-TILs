@@ -53,6 +53,6 @@ for i in range(1, len(longest)):
         same = 1
     else:
         same=0
-    #print(f"i={i}, same={same}, cnt={cnt}")
+    print(f"i={i}, same={same}, cnt={cnt}")
 
 print(cnt)
