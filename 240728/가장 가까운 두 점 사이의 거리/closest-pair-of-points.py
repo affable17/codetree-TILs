@@ -13,4 +13,4 @@ for i in range(N):
         x2, y2 = dots[j]
         k = (x1-x2)*(x1-x2) + (y1-y2)*(y1-y2)
         arr.append(k)
-print(arr)
+print(min(arr))
