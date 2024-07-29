@@ -4,8 +4,7 @@ N, M = map(int, input().split())
 graph = [[]for _ in range(N+1)]
 
 #방문 확인
-visited = [False]*(N+1)
-
+visited = [False for _ in range(N+1)]
 vertex_cnt = 0
 
 def dfs(v):
@@ -14,6 +13,7 @@ def dfs(v):
     for curr_v in graph[v]:
         if not visited[curr_v]:
             visited[curr_v]=True
+            print(curr_v)
             vertex_cnt+=1
             dfs(v)
 
