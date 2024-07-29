@@ -7,6 +7,11 @@ graph = [[]for _ in range(N+1)]
 visited = [False for _ in range(N+1)]
 vertex_cnt = 0
 
+for _ in range(M):
+    a, b = map(int, input().split())
+    graph[a].append(b)
+    graph[b].append(a)
+
 def dfs(v):
     global vertex_cnt
     for curr_v in graph[v]:
@@ -16,13 +21,10 @@ def dfs(v):
             vertex_cnt+=1
             dfs(v)
 
-for _ in range(M):
-    a, b = map(int, input().split())
-    graph[a].append(b)
-    graph[b].append(a)
+
 
 visited[1]=True
-print(graph)
+
 
 dfs(1)
 
