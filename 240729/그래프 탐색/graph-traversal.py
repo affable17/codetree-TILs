@@ -13,7 +13,7 @@ def dfs(v):
     for curr_v in graph[v]:
         if not visited[curr_v]:
             visited[curr_v]=True
-            print(visited)
+            print(curr_v)
             vertex_cnt+=1
             dfs(v)
 
