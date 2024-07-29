@@ -15,7 +15,6 @@ for _ in range(M):
 def dfs(v):
     global vertex_cnt
     for curr_v in graph[v]:
-        
         if not visited[curr_v]:
             visited[curr_v]=True
             vertex_cnt+=1
@@ -24,8 +23,6 @@ def dfs(v):
 
 
 visited[1]=True
-
-
 dfs(1)
 
 print(vertex_cnt)
