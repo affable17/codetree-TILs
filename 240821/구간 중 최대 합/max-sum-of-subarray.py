@@ -7,7 +7,7 @@ for i in range(n-k+1):
     for j in range(i, i+k):
         sum += arr[j]
         max_num = max(max_num, sum)
-        print(i, max_num)
+        # print(i, max_num)
 
 
 print(max_num)
